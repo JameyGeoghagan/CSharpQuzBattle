@@ -1,0 +1,26 @@
+﻿@model CSharpQuizBattle.Models.CharacterSetupViewModel
+
+<div class="setup-container">
+    <h1>Character Setup</h1>
+    <form asp-action="Setup" method="post">
+        <div>
+            <label for="PlayerName">Enter your name:</label>
+            <input type="text" id="PlayerName" name="PlayerName" value="@Model.PlayerName" required />
+        </div>
+
+        <div>
+            <h2>Select Your Avatar</h2>
+            <div class="avatar-selection">
+                @foreach (var avatar in Model.AvailableAvatars)
+                {
+                    <label>
+                        <input type="radio" name="SelectedAvatar" value="@avatar" required />
+                        <img src="~/images/avatars/@avatar" alt="Avatar" class="avatar" />
+                    </label>
+                }
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Start Battle</button>
+    </form>
+</div>

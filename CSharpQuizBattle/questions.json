@@ -1,0 +1,196 @@
+[
+  {
+    "Category": "CSharpFundamentals",
+    "Questions": [
+      {
+        "Text": "What is the purpose of the `using` statement in C#?",
+        "Choices": [ "To include namespaces", "To handle exceptions", "To ensure the disposal of resources", "To declare variables" ],
+        "CorrectAnswerIndex": 2,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which of the following is a value type in C#?",
+        "Choices": [ "String", "Array", "Integer", "Object" ],
+        "CorrectAnswerIndex": 2,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which keyword is used to define a method that can be overridden by a derived class?",
+        "Choices": [ "override", "virtual", "abstract", "sealed" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 2
+      },
+      {
+        "Text": "What is the output of the following code?\n\n```csharp\nint x = 5;\nConsole.WriteLine(x++);\n```",
+        "Choices": [ "4", "5", "6", "Error" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 2
+      },
+      {
+        "Text": "Which of the following statements is true about C#?",
+        "Choices": [ "C# is case-insensitive.", "C# supports multiple inheritance.", "C# is a strongly-typed language.", "C# does not support operator overloading." ],
+        "CorrectAnswerIndex": 2,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which of the following is NOT a valid C# access modifier?",
+        "Choices": [ "public", "private", "protected", "final" ],
+        "CorrectAnswerIndex": 3,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which of the following is a reference type in C#?",
+        "Choices": [ "int", "double", "bool", "string" ],
+        "CorrectAnswerIndex": 3,
+        "Difficulty": 2
+      },
+      {
+        "Text": "What does the `static` keyword mean in C#?",
+        "Choices": [ "The member belongs to the type itself rather than to a specific object.", "The member cannot be overridden.", "The member is only accessible within its own class.", "The member cannot be serialized." ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 2
+      }
+    ]
+  },
+  {
+    "Category": "ObjectOrientedProgramming",
+    "Questions": [
+      {
+        "Text": "Which of the following is NOT a pillar of Object-Oriented Programming?",
+        "Choices": [ "Encapsulation", "Abstraction", "Inheritance", "Recursion" ],
+        "CorrectAnswerIndex": 3,
+        "Difficulty": 1
+      },
+      {
+        "Text": "What is polymorphism in C#?",
+        "Choices": [ "The ability of a method to take multiple forms", "The ability to inherit from multiple classes", "The ability to implement multiple interfaces", "The ability to override methods in derived classes" ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 2
+      },
+      {
+        "Text": "Which access modifier is the most restrictive that allows access within the same class only?",
+        "Choices": [ "public", "private", "protected", "internal" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which of the following is a correct way to define a class in C#?",
+        "Choices": [ "class MyClass {}", "MyClass class {}", "def class MyClass {}", "new class MyClass {}" ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 1
+      },
+      {
+        "Text": "What is the output of the following code?\n\n```csharp\nclass Base\n{\n    public virtual void Print() { Console.WriteLine(\"Base\"); }\n}\nclass Derived : Base\n{\n    public override void Print() { Console.WriteLine(\"Derived\"); }\n}\nclass Program\n{\n    static void Main()\n    {\n        Base obj = new Derived();\n        obj.Print();\n    }\n}\n```",
+        "Choices": [ "Base", "Derived", "Error", "BaseDerived" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 3
+      },
+      {
+        "Text": "Which of the following best describes 'Encapsulation'?",
+        "Choices": [ "Hiding the implementation details and exposing only the interface", "The ability of different classes to be treated as instances of the same class through inheritance", "The ability to reuse code across multiple projects", "A type of polymorphism where a base class's method is replaced with a derived class's method" ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 2
+      },
+      {
+        "Text": "Which of the following is true about abstract classes in C#?",
+        "Choices": [ "They can be instantiated.", "They must have at least one abstract method.", "They cannot have any fields or properties.", "They are equivalent to interfaces." ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 3
+      }
+    ]
+  },
+  {
+    "Category": "AdvancedCSharp",
+    "Questions": [
+      {
+        "Text": "What is the purpose of the `yield` keyword in C#?",
+        "Choices": [ "To terminate a loop", "To define an iterator method", "To handle exceptions", "To return multiple values from a method" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 3
+      },
+      {
+        "Text": "Which of the following is a correct way to implement a singleton pattern in C#?",
+        "Choices": [ "Using a public constructor", "Using a private constructor with a static instance", "Using an abstract class", "Using a sealed class with a public static method" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 4
+      },
+      {
+        "Text": "What does the `async` keyword do in C#?",
+        "Choices": [ "It makes a method asynchronous", "It creates a new thread", "It executes a method in parallel", "It waits for a task to complete" ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 2
+      },
+      {
+        "Text": "Which of the following is true about delegates in C#?",
+        "Choices": [ "They can point to multiple methods", "They are similar to pointers in C++", "They can be used to define callback methods", "All of the above" ],
+        "CorrectAnswerIndex": 3,
+        "Difficulty": 2
+      },
+      {
+        "Text": "Which of the following LINQ query correctly selects the names from a list of students where the student's age is greater than 20?",
+        "Choices": [ "`from student in students where student.Age > 20 select student.Name`", "`select student.Name from student where student.Age > 20`", "`from student where student.Age > 20 select student.Name in students`", "`select student.Name where student.Age > 20 from students`" ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 3
+      },
+      {
+        "Text": "What is the primary difference between `IEnumerable` and `IQueryable` in C#?",
+        "Choices": [ "`IEnumerable` is used for in-memory collections, `IQueryable` is used for remote data sources like databases.", "`IQueryable` is used for in-memory collections, `IEnumerable` is used for remote data sources.", "`IEnumerable` supports deferred execution, `IQueryable` does not.", "`IQueryable` supports deferred execution, `IEnumerable` does not." ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 4
+      },
+      {
+        "Text": "Which of the following is a correct usage of the `ref` keyword in C#?",
+        "Choices": [ "To pass a parameter by value", "To pass a parameter by reference", "To declare a local variable", "To define a reference type" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 2
+      }
+    ]
+  },
+  {
+    "Category": "SoftwareEngineering",
+    "Questions": [
+      {
+        "Text": "Which of the following is NOT a software development lifecycle model?",
+        "Choices": [ "Waterfall", "Agile", "Spiral", "Design Pattern" ],
+        "CorrectAnswerIndex": 3,
+        "Difficulty": 1
+      },
+      {
+        "Text": "What is the primary purpose of version control systems?",
+        "Choices": [ "To track changes in code", "To manage databases", "To automate testing", "To deploy applications" ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which of the following is a principle of SOLID design?",
+        "Choices": [ "Single Responsibility Principle", "Simple Class Principle", "Open/Closed Principle", "Single Responsibility Principle and Open/Closed Principle" ],
+        "CorrectAnswerIndex": 3,
+        "Difficulty": 2
+      },
+      {
+        "Text": "In the context of software testing, what does 'unit testing' mean?",
+        "Choices": [ "Testing the complete application", "Testing individual components in isolation", "Testing the integration of components", "Testing the performance of the application" ],
+        "CorrectAnswerIndex": 1,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which of the following is a benefit of Continuous Integration (CI)?",
+        "Choices": [ "Faster feedback on code changes", "Improved collaboration among team members", "Early detection of bugs", "All of the above" ],
+        "CorrectAnswerIndex": 3,
+        "Difficulty": 2
+      },
+      {
+        "Text": "What is the main goal of 'Agile' methodology?",
+        "Choices": [ "To deliver working software frequently", "To produce extensive documentation", "To avoid customer interaction", "To stick to a rigid plan" ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 1
+      },
+      {
+        "Text": "Which of the following is true about 'Test-Driven Development (TDD)'?",
+        "Choices": [ "Tests are written before the code.", "Tests are written after the code.", "Tests are only written for critical components.", "Tests are not needed in TDD." ],
+        "CorrectAnswerIndex": 0,
+        "Difficulty": 3
+      }
+    ]
+  }
+]
